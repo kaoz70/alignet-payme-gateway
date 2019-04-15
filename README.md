@@ -10,6 +10,10 @@ Alignet (PayMe) PHP classes
 
 ## Usage
 
+### Installation
+
+    composer require kaoz70/alignet-payme-gateway
+
 ### Init
 
     // Set the configuration class
