@@ -68,7 +68,9 @@ class PayMe
         //Remove the dot
         $noDot = str_replace('.', '', $format);
         //Remove any leading zeroes
-        return (int) ltrim($noDot, '0');
+        $noZeroes = ltrim($noDot, '0');
+
+        return $noZeroes === '' ? '000' : $noZeroes;
     }
 
     /**
